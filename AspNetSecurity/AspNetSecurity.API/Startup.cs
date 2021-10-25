@@ -22,6 +22,13 @@ namespace AspNetSecurity.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://localhost:5000";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "AspNetSecurityApi";
+                });
             services.AddDbContext<AspNetSecurityContext>(opt => opt.UseInMemoryDatabase("InMem"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -42,12 +49,17 @@ namespace AspNetSecurity.API
 
             app.UseRouting();
 
+
+            app.UseAuthentication();
             app.UseAuthorization();
+          
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+           
+            
         }
     }
 }

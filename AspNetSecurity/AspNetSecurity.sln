@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetSecurity.API", "AspNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetSecurity.IdentityServer", "AspNetSecurity.IdentityServer\AspNetSecurity.IdentityServer.csproj", "{116DD362-E95D-4AF6-91F7-D064DB38B92C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetSecurity.Consoles", "AspNetSecurity.Consoles\AspNetSecurity.Consoles.csproj", "{4C1329F4-2EB9-4700-B7E9-0623587EF90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetSecurity.Web", "AspNetSecurity.Web\AspNetSecurity.Web.csproj", "{4A8F576A-E645-4E15-B3D4-87B2A22C1559}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{116DD362-E95D-4AF6-91F7-D064DB38B92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{116DD362-E95D-4AF6-91F7-D064DB38B92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{116DD362-E95D-4AF6-91F7-D064DB38B92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1329F4-2EB9-4700-B7E9-0623587EF90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1329F4-2EB9-4700-B7E9-0623587EF90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1329F4-2EB9-4700-B7E9-0623587EF90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1329F4-2EB9-4700-B7E9-0623587EF90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8F576A-E645-4E15-B3D4-87B2A22C1559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8F576A-E645-4E15-B3D4-87B2A22C1559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8F576A-E645-4E15-B3D4-87B2A22C1559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8F576A-E645-4E15-B3D4-87B2A22C1559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
