@@ -26,6 +26,11 @@ namespace AspNetSecurity.IdentityServer
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddIdentityServer()
+                .AddDeveloperSigningCredential()
+                .AddInMemoryApiResources(Config.GetAllApiResources())
+                .AddInMemoryClients(Config.GetClients());
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -51,6 +56,7 @@ namespace AspNetSecurity.IdentityServer
             {
                 endpoints.MapControllers();
             });
+            app.UseIdentityServer();
         }
     }
 }
